@@ -1,0 +1,1039 @@
+/*========== a. Global CSS ==========*/
+body {
+    font-family: 'Circe', sans-serif;
+    color:#091e3f;
+}
+.overflow-hidden {
+    overflow:hidden;
+}
+.btn,
+button,  
+a:focus, 
+.btn:hover, 
+.btn:focus, 
+button:hover, 
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+a {
+    color: rgba(9, 30, 63, 0.7);
+    transition: 0.3s all linear;
+}
+a:hover {
+    color:#3625d3;
+    text-decoration: none;
+}
+h2 {
+    font-size: 46px;
+}
+h3 {
+    font-size: 30px;
+}
+h4, 
+h5 {
+    line-height: 1.5;
+}
+p {
+    font-size: 17px;
+    line-height: 26px;
+}
+.ms-title-15 {
+    font-size: 15px;
+    color: rgba(9, 30, 63, 0.7);
+    font-weight: bold;
+}
+.ms-spacer-30, 
+.ms-spacer-40, 
+.ms-spacer-60, 
+.ms-spacer-70, 
+.ms-spacer-80, 
+.ms-spacer-90, 
+.ms-spacer-100 {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.ms-spacer-30 {
+    height: 30px;
+}
+.ms-spacer-40 {
+    height: 40px;
+}
+.ms-spacer-60 {
+    height: 60px;
+}
+.ms-spacer-70 {
+    height: 70px;
+}
+.ms-spacer-80 {
+    height: 80px;
+}
+.ms-spacer-90 {
+    height: 90px;
+}
+.ms-spacer-100 {
+    height: 100px;
+}
+.ms-theme-color {
+    color: #3625d3;
+}
+.ms-primary-btn, 
+.ms-secondary-btn {
+    border: 2px solid #3625d3;
+    font-size: 17px;
+    font-weight: bold;    
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    padding:12px 30px;
+    border-radius: 5px;
+}
+.ms-primary-btn {
+    color: #fff;
+    background: #3625d3;
+}
+.ms-primary-btn:hover {
+    background: #fff;
+    color: #3625d3;
+}
+.ms-secondary-btn {
+    color: #3625d3;
+    background: #fff;
+}
+.ms-secondary-btn:hover {
+    color: #fff;
+    background: #3625d3;
+}
+.add-cart-btn {
+    color: #091e3f;
+    font-size: 15px;
+    font-weight: bold;
+    background: #fff;
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    padding: 12px 25px;
+}
+.add-cart-btn:hover {
+    color: #fff;
+    background: #3625d3;
+}
+.ms-sec-pad {
+    padding:60px 0;
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 980px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+.grey-body-bg {
+    background: #f4f7fa;
+}
+.extra-space {
+    margin: 0 50px;
+}
+.pad-100 {
+    padding: 100px 0;
+}
+
+/*========== b. Header Section CSS ==========*/
+header {
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 20px 30px;
+}
+header nav ul .nav-item {
+    margin: 0 20px;
+    padding: 4px 0;
+}
+header nav ul .nav-item:first-child {
+    margin-left: 0;
+}
+header nav ul .nav-item:last-child {
+    margin-right: 0;
+}
+#homepage-one header nav ul li a {
+    color: #fff;
+}
+#homepage-one header .navbar-nav li.dropdown .dropdown-menu .dropdown-item {
+    color: #091e3f;
+}
+#homepage-one header .navbar-nav li.dropdown .dropdown-menu .dropdown-item:hover, 
+header .navbar-nav li.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #3625d3;
+}
+header nav ul li a {
+    color: #091e3f;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color:#3625d3;
+}
+header .icons .ms-header-icon {
+    color: #091e3f;
+    margin: 0 5px;
+}
+header nav button {
+    position: relative;
+    bottom: 15px;
+    left: 90%;
+}
+header nav {
+    width: 100%;
+}
+header .navbar-nav li.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+header .navbar-nav li.dropdown .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 1px 0px 7px 0px rgba(22, 43, 70, 0.1);
+    transition: all 300ms linear 0s;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    padding: 0;
+}
+header nav ul li.dropdown {
+    backface-visibility: hidden;
+}
+header .navbar-nav li:hover.dropdown .dropdown-menu {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+}
+header .navbar-nav li.dropdown .dropdown-menu {
+    top: 58px;
+}
+header nav li.dropdown .dropdown-menu:before {
+    content: "\f0d8";
+    font: normal normal normal 30px/1 FontAwesome;
+    position: absolute;
+    top: -21px;
+    left: 25px;
+    color: rgba(22, 43, 70, 0.1);
+}
+@media (min-width: 991px) {
+    header .navbar-nav li.dropdown .dropdown-menu {
+        display: block;
+        min-width: 150px;
+    }
+}
+
+/*---------- hamburger menu css ----------*/
+.navbar-toggler:focus {
+    outline: none;
+}
+.menu_toggle {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}  
+.menu_toggle .hamburger {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+#homepage-one .menu_toggle .hamburger span, 
+#homepage-one .menu_toggle .hamburger-cross span {
+    background: #fff;
+}
+.menu_toggle .hamburger span {
+    width: 0%;
+    height: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 4px 0;
+    display: block;
+    background: #091e3f;
+    border-radius: 3px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.menu_toggle .hamburger span:nth-child(1) {
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu_toggle .hamburger span:nth-child(2) {
+    -webkit-transition-delay: .125s;
+    -o-transition-delay: .125s;
+    transition-delay: .125s;
+}
+.menu_toggle .hamburger span:nth-child(3) {
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+}
+.menu_toggle .hamburger-cross {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+}
+.menu_toggle .hamburger-cross span {
+    display: block;
+    background: #091e3f;
+    border-radius: 3px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.menu_toggle .hamburger-cross span:nth-child(1) {
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+.menu_toggle .hamburger-cross span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+.collapsed .menu_toggle .hamburger span {
+    width: 100%;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(1) {
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(2) {
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(3) {
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(1) {
+    height: 0%;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(2) {
+    width: 0%;
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+/*========== c. Footer Section CSS ==========*/
+footer {
+    padding: 60px 0;
+    background-image: url('../images/footer-image.jpg');
+    background-size: cover;
+}
+footer .ms-footer-seperator {
+    background: #283b59;
+    width: 100%;
+    height: 1px;
+}
+footer p, 
+footer p a, 
+footer a {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+footer p a:hover, 
+footer a:hover {
+    color: #fff;
+}
+footer h2 {
+    font-size: 36px;
+}
+footer form input {
+    width: 100%;
+    padding: 14px 200px 14px 25px;
+    border: 0;
+    border-radius: 8px;
+}
+footer form button {
+    bottom: 0;
+    right: 15px;
+}
+footer ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    z-index: 1;
+}
+footer ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+footer ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+footer ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+footer ul li a:hover:before {
+    top: 0;
+}
+footer ul li:nth-child(1) a:before{
+    background: #3b5999;
+}
+footer ul li:nth-child(2) a:before{
+    background: #55acee;
+}
+footer ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+footer ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+footer span.copyright {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*========== d. Inner Pages banner section ==========*/
+.inner-bnr {
+    background: url('../images/banner-image.jpg') no-repeat center;
+    padding: 150px 0 120px 0;
+    background-size: cover;
+}
+
+/*========== e. Preloader CSS==========*/
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color:#fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../images/loader.gif');
+}
+
+
+
+
+/*============================================================*/
+.home-two-main-color {
+    color: #2a303a;
+}
+.seperator-line {
+    color: #9ca3b8;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 60px;
+    letter-spacing: 3px;
+}
+.seperator-line:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #9ca3b8;
+    left: 0;
+    top: 10px;
+}
+.ms-dark-btn, 
+.ms-red-btn {    
+    font-size: 17px;
+    font-weight: bold;    
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    padding:12px 30px;
+    border-radius: 5px;
+}
+.ms-dark-btn {
+    background: #2a303a;
+    color: #fff;
+}
+.ms-dark-btn:hover {
+    background: #f82c45;
+    color:#fff;
+}
+.ms-red-btn {
+    background: #f82c45;
+    color:#fff;
+}
+.ms-icon-btn {
+    position: relative;
+    padding: 12px 55px 12px 30px;
+}
+.ms-icon-btn span {
+    font-size: 22px;
+    position: absolute;
+}
+.ms-icon-btn span span {
+    display: none;
+}
+.ms-red-btn:hover {
+    background: #2a303a;
+    color:#fff;
+}
+
+/*---------- Header CSS ----------*/
+#homepage-two header nav ul li a {
+    font-weight: bold;
+    color: #2a303a;
+}
+#homepage-two header .navbar-nav li.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #3025d3;
+}
+/*---------- Banner CSS ----------*/
+#home-two-bnr {
+    padding: 400px 0 350px 0;
+    background: url('../images/slider-01.png') no-repeat center #2a303a;
+    background-size: cover;
+}
+#home-two-bnr .seperator-line {
+    color: #2a303a;
+}
+#home-two-bnr .seperator-line:before {
+    background: #2a303a;
+}
+#moveimg{
+    background-repeat: no-repeat; 
+    animation: MoveUpDown 10s linear infinite;
+    position: absolute;
+    right: 200px;
+}
+/* position of corona animation */
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 150px;
+}
+50% {
+    top: 250px;
+}
+}
+/*---------- Live Update CSS ----------*/
+#ms-update-sec {
+    background: url('../images/doctor-img.png') no-repeat right #2a303a;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+#ms-update-sec .live-update {
+    padding: 60px;
+    position: relative;
+    bottom: 120px;
+    margin-bottom: -20px;
+}
+#ms-update-sec .live-update .blue-text {
+    font-size: 46px;
+    color:#0683cb;
+}
+#ms-update-sec .live-update .green-text {
+    font-size: 46px;
+    color:#4fe88f;
+}
+#ms-update-sec .live-update .red-text {
+    font-size: 46px;
+    color:#f92d45;
+}
+#ms-update-sec p.update-para {
+    color: rgba(255, 255, 255, 0.8);
+}
+/*---------- Symptoms Section CSS ----------*/
+#home-two-corona-symptom .first-img {
+    width: 65%;
+    float: right;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#home-two-corona-symptom .ms-symptom-box {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#home-two-corona-symptom .ms-symptom-box:hover {
+    border-bottom-right-radius: 50px;
+}
+#home-two-corona-symptom .ms-symptom-box .ms-content-overlay {
+    background: rgba(101,120,229,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#home-two-corona-symptom .ms-symptom-box:hover .ms-content-overlay {
+    opacity: 1;
+}
+#home-two-corona-symptom .ms-symptom-box .ms-content-details {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    opacity: 0;
+    width: 80%;
+    text-align: center;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+#home-two-corona-symptom .ms-symptom-box:hover .ms-content-details {
+    top: 22%;
+    left: 10%;
+    opacity: 1;
+    width: 80%;
+    text-align: center;
+}
+#home-two-corona-symptom .ms-white-btn {
+    color: #2a303a;
+    background: #fff;
+}
+#home-two-corona-symptom .ms-symptom-box.box-2 {
+    margin-top: 100px;
+}
+#home-two-corona-symptom .ms-symptom-box.box-3 {
+    margin-top: -100px;
+}
+/*---------- Our Clients Section CSS ----------*/
+#home-two-clients-sec {
+    background: url('../images/background1.jpg') no-repeat;
+    background-size: cover;
+}
+/*---------- Virus Spread Section CSS ----------*/
+#home-two-spread-sec {
+    padding-bottom: 0px;
+}
+#home-two-spread-sec .text-one {
+    position: relative;
+    top: 20px;
+    right: 60px;
+}
+#home-two-spread-sec .text-two {
+    position: relative;
+    top: 35px;
+}
+#home-two-spread-sec .text-three {
+    top: 45px;
+    position: relative;
+}
+#home-two-spread-sec .text-four {
+    right: 60px;
+    position: relative;
+    top: 60px;
+}
+/*---------- Prevention Section CSS ----------*/
+#ms-prevention-sec .ms-blue-bg {
+    max-width: 1520px;
+    height: 850px;
+    background: #6578e5;
+    border-bottom-right-radius: 50px;
+}
+#ms-prevention-sec .protect-container {
+    margin-top:-750px;
+}
+#ms-prevention-sec .side-image {
+    position: absolute;
+    left: 1320px;
+    bottom: 20px;
+    width: 40%;
+}
+#ms-prevention-sec .home2-special-pad {
+    padding-right: 300px;
+}
+/*---------- Shop Section CSS ----------*/
+#home-two-ms-shop-sec {
+    padding-top: 190px;
+}
+#home-two-ms-shop-sec .ms-shop-box .ms-box-content {
+    padding: 30px;
+}
+#home-two-ms-shop-sec .ms-shop-box {
+    background: #f9f9f9;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+}
+#home-two-ms-shop-sec .ms-shop-box:hover {
+    background: #fff;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 4px 15px 1px rgba(9, 30, 63, 0.14);
+}
+#home-two-ms-shop-sec .ms-shop-box .ms-hover {
+    bottom: 30%;
+    left: 14.5%;
+}
+#home-two-ms-shop-sec .ms-shop-box:hover .ms-hover {
+    bottom: 36%;
+}
+#home-two-ms-shop-sec .ms-box-content h5 a {
+    color: #091e3f;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#home-two-ms-shop-sec .ms-box-content h5 a:hover {
+    color: #f92d45;
+}
+/*---------- Team Section CSS ----------*/
+#home-two-team-sec {
+    background: #f0f1f2;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+#home-two-team-sec .ms-team-box-2 {
+    background: #f9f9f9;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+}
+#home-two-team-sec .ms-team-box-2:hover  {
+    background: #fff;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 4px 15px 1px rgba(9, 30, 63, 0.14);
+}
+#home-two-team-sec .ms-team-box-2 .ms-hover {
+    position: absolute;
+    bottom: 20%;
+    left: 23%;
+    opacity: 0;
+    padding: 10px 25px 8px;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+#home-two-team-sec .ms-team-box-2:hover .ms-hover {
+    opacity: 1;
+    bottom: 26%;
+    left: 23%;
+}
+#home-two-team-sec .ms-team-box-2 .ms-box-content {
+    padding:20px 40px;
+    background: #2a303a;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+}
+#home-two-team-sec .ms-team-box-2:hover .ms-box-content {
+    background: #f92d45;
+    border-bottom-right-radius: 50px;
+}
+#home-two-team-sec .ms-team-box-2 .ms-box-content h4 {
+    line-height: 1.1;
+}
+#home-two-team-sec .ms-team-box-2 .ms-box-content p {
+    color: #9ca3b8;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+#home-two-team-sec .ms-team-box-2:hover .ms-box-content p {
+    color:#fff;
+}
+#home-two-team-sec .ms-team-box-2 .ms-box-content p:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: #9ca3b8;
+    left: 0;
+    top: 10px;
+}
+#home-two-team-sec .ms-team-box-2 .ms-hover .btn.icon {
+    background: #2a303a;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    line-height: 28px;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 8px;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#home-two-team-sec .ms-team-box-2 .ms-hover .btn.icon:hover {
+    background: #f92d45;
+}
+/*---------- Blog Section CSS ----------*/
+#home-two-blog-sec .ms-blog-box {
+    position: relative;
+    overflow: hidden;
+}
+#home-two-blog-sec .ms-main-box .ms-blog-box .content-overlay{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#home-two-blog-sec .ms-main-box:hover .ms-blog-box .content-overlay {
+    opacity: 1;
+}
+#home-two-blog-sec .ms-main-box .ms-blog-box .content-overlay .content-button {
+    position: absolute;
+    top: 80%;
+    left: 27%;
+    opacity: 0;
+    width: 90%;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+#home-two-blog-sec .ms-main-box:hover .ms-blog-box .content-overlay .content-button {
+    top: 40%;
+    left: 27%;
+    opacity: 1;
+    width: 100%;
+}
+#home-two-blog-sec .ms-main-box h4 {
+    line-height: 1.3;
+}
+#home-two-blog-sec .ms-main-box h4 a {    
+    color: #2a303a;
+}
+#home-two-blog-sec .ms-main-box {
+    padding-left: 20px;
+}
+#home-two-blog-sec .ms-main-box .ms-title-15.ms-vertical-text {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    left: -52px;
+    color: #f92d45;
+}
+/*---------- Footer CSS ----------*/
+#footer-home-two {
+    background: #262c36;
+    padding: 100px 0 15px;
+}
+#footer-home-two .contact-info {
+    box-shadow: 0px 20px 18.4px 1.6px rgba(9, 30, 63, 0.4);
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 50px;
+}
+#footer-home-two .contact-info a {
+    color: #091e3f;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+    font-size: 20px;
+}
+#footer-home-two .contact-info a:hover {
+    color: #f82c45;
+}
+#footer-home-two .footer-main {
+    padding: 50px;
+    border-radius: 20px;
+}
+footer#footer-home-two p.contact-text, 
+footer#footer-home-two p a {
+    color: #262c36;
+}
+footer#footer-home-two p a:hover {
+    color: #f82c45;
+}
+#footer-home-two .footer-main .footer-title {
+    color: #262c36;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+} 
+#footer-home-two .footer-main .footer-title:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #9ca3b8;
+    left: 0;
+    top:10px;
+}
+#footer-home-two .footer-main .links {
+    padding-left: 40px;
+}
+#footer-home-two .footer-main input {
+    background: #e9e9eb;
+    padding: 15px 180px 15px 25px;
+    font-size: 15px;
+}
+#footer-home-two .footer-main button {
+    bottom: 1px;
+}
+/*---------- top Section CSS ----------*/
+#home-three-blue-sec {
+    background: #FB715E;
+    padding: 100px 0 60px 0;
+}
+/*---------- What is coronavirus Section CSS ----------*/
+#home-three-coronavirus-sec {
+    padding: 60px 0 100px 0;
+}
+#home-three-coronavirus-sec .ms-icon-box {
+    margin-bottom: 30px;
+}
+#home-three-coronavirus-sec #home-3-blue-carousel {
+    margin-top: -290px;
+}
+/*---------- Vaccine Section CSS ----------*/
+#home-two-ms-shop-sec {
+    padding-top: 190px;
+}
+#home-two-ms-shop-sec .ms-shop-box .ms-box-content {
+    padding: 30px;
+}
+#home-two-ms-shop-sec .ms-shop-box {
+    background: #f9f9f9;
+    transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+}
+#home-two-ms-shop-sec .ms-shop-box:hover {
+    background: #fff;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 4px 15px 1px rgba(9, 30, 63, 0.14);
+}
+#home-two-ms-shop-sec .ms-shop-box .ms-hover {
+    bottom: 30%;
+    left: 14.5%;
+}
+#home-two-ms-shop-sec .ms-shop-box:hover .ms-hover {
+    bottom: 36%;
+}
+
+/*==================== 12. News Detail Page CSS ====================*/
+.ms-news-detail-page .ms-content-area .grey-body-bg {
+    padding: 40px;
+}
+.ms-news-detail-page .ms-content-area .grey-body-bg h4 {
+    color: #3625d3;
+    line-height: 30px;
+}
+article.ms-news-detail-page {
+    margin-bottom: 30px;
+}
+.ms-btn-with-icon {
+    padding:4px 30px 12px;
+}
+.ms-btn-with-icon:before {
+    content: "\23";
+    font-family: 'ElegantIcons';
+    font-size: 22px;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+/*---------- Coronavirus Symptoms Section CSS ----------*/
+#home-three-symptoms-sec {
+    background: #eeeff1;
+}
+#home-three-symptoms-sec .ms-three-symptom-box {
+    padding: 40px 30px;
+    background-image: url('../images/home-three-symptom-grey-bg.jpg');
+    transition: all 0.4s linear;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+#home-three-symptoms-sec .ms-three-symptom-box:hover {
+    background-position: center;
+    background-image: url('../images/home_3_symptom_box_bg.jpg');
+}
+#home-three-symptoms-sec .ms-three-symptom-box h4 {
+    transition: all 0.4s linear;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+#home-three-symptoms-sec .ms-three-symptom-box h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid #fff;
+    transition: 0.4s;
+}
+#home-three-symptoms-sec .ms-three-symptom-box:hover h4:after {
+    width: 60%;
+}
+#home-three-symptoms-sec .ms-three-symptom-box:hover h4 {
+    color: #fff;    
+}
+#home-three-symptoms-sec .ms-three-symptom-box p {
+    transition: all 0.3s linear;
+    color:rgba(42,48,58,0.7);
+}
+#home-three-symptoms-sec .ms-three-symptom-box:hover p {
+    color: rgba(255,255,255,0.7);
+}
+#home-three-symptoms-sec .ms-three-symptom-box a {
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+#home-three-symptoms-sec .ms-three-symptom-box a .ms-right-arrow {
+    position: relative;
+    margin-left: 6px;
+    top: 2px;
+}
+#home-three-symptoms-sec .ms-three-symptom-box:hover a {
+    opacity: 1;
+}
+#home-three-symptoms-sec .ms-three-symptom-box img.symptom-img {
+    top: -60px;
+    right: 10px;
+}
